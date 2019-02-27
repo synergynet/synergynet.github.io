@@ -1,0 +1,153 @@
+/*
+Theme Name: STheme
+Theme URI: http://sivan.in/blog/stheme/
+Description: Inspired by Songtaste, created by <a href="http://sivan.in/">Sivan</a>. It‘s simple, widget supported and doesn’t require any plugin. You can add some notes or tweets at Homepage by theme option page.
+Version: 2.2.7
+Last Update: 20090422
+Author: Sivan
+Author URI: http://sivan.in/blog/
+Tags: three-columns, fixed-width, light,white
+*/
+
+/*+++++++ Body+++++++*/
+* { margin:0; padding:0; }
+body { background:#5C6C7C left top repeat-x; font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif; margin:0 auto; padding:0 0 3em 0; color:#444; font-size:12px; }
+a { color:#564B42; text-decoration:none; }
+a:hover { color:#666; text-decoration:underline; }
+h1,h2,h3,h4,h5,h6 { font-weight:bold; letter-spacing:-0.04em; }
+h1 { font-size:200%; }
+h2 { font-size:180%; }
+h3 { font-size:150%; }
+h4 { font-size:120%; }
+h5 { font-size:100%; }
+h6 { font-size:80%; }
+img { border:0; }
+.alignleft { float:left; text-align:left; margin-right:10px; }
+.alignright { float:right; text-align:right; margin-left:10px; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.floatleft { float:left; }
+.floatright { float:right; }
+.left { float:left; margin-right:10px; }
+.right { float:right; margin-left:10px; }
+.fixed,.clear { clear:both; }
+
+/*+++++++ Top +++++++*/
+#main { display:none; }
+#header { height:100px; width:960px; margin:auto; }
+.top_bg { background:left bottom no-repeat; height:10px; width:960px; margin:0 auto; }
+#logo { float:left; padding:10px 0 0 0; margin:10px; }
+#logo h1 a { color:#fff; text-decoration:none; font-size:26px; font-weight:bold; font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif; text-align:center; }
+#logo .description { color: #fff; font-size:12px; font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif; font-style:italic; text-align:center; }
+#rssblock { float:left; width:300px; margin-top:30px; }
+#rssfeed { display:block; float:left; background:transparent no-repeat; width: 32px; height:32px; outline:none; text-indent:-999em; }
+#rssList { display:none; float:left; margin:0 0 0 10px; padding:5px; width:210px; background:#fff; border:1px #E1E1E1 solid; height:30px; color:#000; }
+#rssList li { list-style-image:none; list-style-position:outside; list-style-type:none; }
+
+/*+++++++ Nav+++++++*/
+#subnav { background: #fff; width:125px; height:20px; float:left; list-style:none; margin:-10px 0 0 5%; padding:0; clear:both; }
+#subnav li { display:inline; }
+#subnav li a { background:top left no-repeat; float:left; margin-right:2px; padding-left:7px; }
+#subnav li a em { background:top right no-repeat; color:#AAA; display:block; font-style:normal; padding:4px 10px 2px 4px; }
+#subnav li a:hover,#subnav li.current_page_item a { background:no-repeat left bottom; color:#858a90; text-decoration:none; }
+#subnav li a:hover em,#subnav li.current_page_item em { background:no-repeat right bottom; color:#858a90; }
+
+/*+++++++ Main+++++++*/
+#stheme_left { float:left; clear:left; margin: 50px 1px 0 3px; }
+#stheme_left img{ border:0; }
+.sblk1 { background:no-repeat left top; padding-top:2px; width:18px; margin-bottom:2px; }
+.sblk2 { background:#fff no-repeat left bottom; width:18px; height:16px; }
+#wrapper { width:1006px; padding:0px; margin:auto; }
+#content { background:#fff top no-repeat; width:960px; float:left; min-height:400px; }
+#content_top { margin-top:9px; padding:0 9px 0 9px; }
+#content_foot { background:#fff bottom no-repeat; height:15px; width:100%; float:left; }
+#lsidebar { float:left; width:130px; padding:5px; margin-right:10px; border:1px solid #e1e1e1; background:#EFF2E9; }
+#rsidebar { float:left; width:210px; padding:5px; margin-left:0px; border:1px solid #e1e1e1; background:right top no-repeat #EFF2E9; }
+#lsidebar h2,#rsidebar h2,#lsidebar h3,#rsidebar h3 { font-size:12px; margin-bottom:10px; color:#71A20A; padding-left:10px; background-repeat:no-repeat; background-position: left -302px; font-weight:normal; }
+#lsidebar ul,#rsidebar ul { margin:5px 3px 0; list-style-type:none;}
+#lsidebar ul .widget,#rsidebar ul .widget { margin-top:10px;}
+#lsidebar ul li ul li, #rsidebar ul li ul li { display:block; padding-left:10px; padding-bottom:5px; }
+#blog {float:left; margin-right:12px; width:550px; padding:0 0 20px; min-height:400px; }
+.box { width:530px; margin-bottom:10px; padding:10px; background-color:#fff; border:1px #E1E1E1 solid; }
+
+/*+++++++ Entry +++++++*/
+.posttime { background:no-repeat; height:35px; width:37px; float:left; text-align:center; padding-top:2px; margin-right:6px; margin-top:0px; }
+.posttime .m { color:#666; font-size:12px; padding-bottom:1px; }
+.posttime .d { color:#666; font-size:16px; line-height:16px; }
+.posttitle { margin:0 10px 0 11px; height:38px; padding-top:0px; }
+.posttitle h2,.posttitle h2 a { font-size:16px; color:#D01F3C; text-decoration:none; line-height:20px; margin:0px; max-height:20px; overflow:hidden; letter-spacing:0; }
+.posttitle h2 a:hover { color:#D01F3C; text-decoration:none; background:#F1F2EB; }
+.postmeta { margin:3px 0 0 3px; overflow:hidden; height:16px; }
+.postmeta span { padding-left:14px; color:#808080; margin-right:12px; background-repeat:no-repeat; }
+.postmeta span span { padding-left:0px; margin-right:0px; background-image:none; }
+.postmeta span a { color:#808080; text-decoration:none; }
+.postmeta span a:hover { color:#666; }
+.comment { float:right; background-position:left -58px; margin-right:0!important; }
+.category { background-position:left -78px; }
+.date { background-position:left -98px; }
+.author { background-position:left 2px; }
+.pop { float:right; background-position:left 16px; }
+.edit { background-position:left -138px; }
+.tags {background-repeat:no-repeat; padding-left:15px; background-position:left -13px; line-height:200%; }
+.tags a { background:#F1F2EB; }
+.postmetadata { padding:5px; background:#EFF2E9; }
+.postmetadata a { color:#4C81B6; }
+.post { line-height:140%; margin:10px 0; }
+.post a { color:#4C81B6; }
+.post img { border:1px solid #e1e1e1; padding:2px; max-width:500px; }
+.noboder,.noboder img { border:0; }
+.post a:hover img { border:1px solid #767676; padding:2px; text-decoration:none; }
+.post h1,.post h2,.post h3,.post h4,.post h5,.post h6 { color:#83aa59; margin:10px 0; }
+.post fieldset {padding:10px;}
+.post form { text-align:left; }
+.post form input,.post form textarea,.post form select { border:1px solid #E1E1E1; }
+.post form input.button { border:1px solid #999; padding:2px; }
+.post table { border:1px solid #999; padding:1px; border-collapse:collapse; }
+.post pre { display:block; overflow:auto; color:#808080; padding:5px; margin:5px; }
+.post blockquote { display:block; margin:0 10px; padding:5px; overflow:auto; background:#fafafa; }
+.post code { display:block; overflow:auto; color:#808080; border:2px dashed #e1e1e1; padding:5px; margin:5px; }
+.post ul li,.post ol li { list-style-position:inside; padding-left:20px; margin-bottom:14px; }
+
+/*+++++++ Comments +++++++*/
+#commentform p { padding-bottom:10px; }
+#comments #respond { margin-top:20px; }
+#commentform #author { border:1px solid #dadada; height:20px; width:200px; background: no-repeat left; padding-left:15px; font-size:18px; }
+#commentform #email { border:1px solid #dadada; height:20px; width:200px; background:) no-repeat left; padding-left:15px; font-size:18px; }
+#commentform #url { border:1px solid #dadada; height:20px; width:200px; background: no-repeat left; padding-left:15px; font-size:18px; }
+#commentform #comment { border:1px solid #dadada; height:200px; width:500px; }
+#commentform #submit { border:1px solid #dadada; height:20px; width:140px; background:#fff no-repeat left; padding-left:15px; font-size:12px; color:#4E5C69; }
+#comments h3{ margin:0px 10px 10px 0px; font-size:14px; }
+#comments ul { list-style-type:none; background:#f5f5f5; overflow:hidden; margin-top:10px; }
+#comments ul li { float:left; width:97%; border-top:1px dotted #e1e1e1; min-height:80px; margin:0; padding:10px 10px 5px; }
+ul.commentlist li div.commentmetadata { float:right; }
+ul.commentlist li div.comment-author { float:left; margin-bottom:5px; }
+ul.commentlist li div.comment-author cite.fn a { background: no-repeat left; padding-left:15px; font-weight:bold; font-style:normal; }
+ul.commentlist li div img.avatar { border:1px solid #E1E1E1; padding:2px; float:left; margin:0 10px 5px 0; }
+ul.commentlist li div p { margin:0px 5px; }
+ul.commentlist li ul.children li { padding-left:20px!important; }
+ul.commentlist li ul.children li.depth-2 { width:94%!important; }
+ul.commentlist li ul.children li.depth-3 { width:91%!important; }
+ul.commentlist li ul.children li.depth-4 { width:88%!important; }
+ul.commentlist li ul.children li.depth-5 { width:85%!important; }
+
+/*+++++++ Search +++++++*/
+#search_form { width:165px; height:68px; padding:0; margin:0 0 0 5px; }
+#search_form #s{ float:left; width:100px; height:20px; border:1px solid #ccc; background:#fff; color:#564B42; line-height:18px; display:inline-block; margin-right:2px; margin-top:5px; padding:5px 20px 0 5px; }
+
+/*+++++++ Footer +++++++*/
+#footer { width:910px; background:#4c535b bottom no-repeat; color:#ccc; clear:left; overflow:auto; padding:13px 10px; margin:0 auto; }
+#foot_right { padding:5px 0 0 100px; text-align:left; }
+.w3c { float:right; margin:0 30px 0 0; }
+.w3c a{ color:#ccc; text-decoration:none; }
+.foot_fun{ margin:0; padding:0; }
+.foot_fun li{ display:inline; list-style:none; margin:0 10px 0 0; background:left no-repeat; padding-left:15px; }
+.foot_fun a,.foot_fun a:hover{ color:#fff; }
+#footer p { font-size:11px; color:#ccc; margin:5px 0 0 0; }
+#footer p a { color:#ccc; }
+
+/*+++++++ Authorpage +++++++*/
+#author { margin-bottom:10px; }
+#author .avatar { padding:2px; background:#fff; border:1px #E1E1E1 solid; float:left; margin-right:10px; }
+
+/*+++++++ Twitter +++++++*/
+#twitter_update_list { padding:0; margin:0; }
+#twitter_update_list li { display:block; margin:0px!important; list-style-type:none; padding-left:10px; background-repeat:no-repeat; background-position:left -302px; }
